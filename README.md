@@ -1,77 +1,110 @@
-# Bütçem - Kişisel Finans & Gider Takipçisi
+<div align="center">
+💰 Bütçem — Kişisel Finans & Gider Takipçisi
 
-Bütçem, kullanıcıların günlük gelir ve giderlerini modern, sade ve göz alıcı bir arayüzle kaydetmesini, listelemesini, düzenlemesini ve silmesini sağlayan bir kişisel finans yönetim uygulamasıdır. 
+Günlük gelir ve giderlerinizi sade, modern ve göz alıcı bir arayüzle yönetin.
 
-Bu proje, modern web geliştirme standartları çerçevesinde **React (Vite)** ve **Tailwind CSS** kullanılarak geliştirilmiştir.
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
 
----
+🔗 Canlı Demo · 🐞 Hata Bildir · ✨ Özellik Öner
 
-## 🚀 Proje Özellikleri (CRUD & LocalStorage)
+</div>
 
-Uygulama, ödev yönergesinde belirtilen tüm gereksinimleri karşılamaktadır:
-*   **Gelir/Gider Ekleme (Create):** Açıklama, tutar, kategori, tarih ve işlem türü (gelir/gider) girerek yeni kayıt oluşturulabilir.
-*   **İşlem Geçmişi Listeleme (Read):** Eklenen tüm işlemler kronolojik olarak listelenir. Arama kutusu ile açıklamaya göre filtreleme yapılabilir. Ayrıca tür (Gelir/Gider) ve kategoriye göre süzülebilir.
-*   **Kayıt Güncelleme (Update):** Listeden seçilen herhangi bir işlem, form alanlarına otomatik doldurularak güncellenebilir.
-*   **Kayıt Silme (Delete):** İstenmeyen işlemler onay alınarak listeden kolayca kaldırılabilir.
-*   **LocalStorage Kalıcılığı:** Girilen tüm veriler tarayıcı önbelleğinde saklanır. Sayfa yenilendiğinde veriler kaybolmaz.
-*   **Kategori Analizi:** Giderlerin hangi kategorilerde yoğunlaştığını gösteren dinamik yüzde çubukları ve otomatik analiz özeti.
-*   **Premium Tasarım:** Koyu tema (Dark theme), yumuşak degradeler (gradients), glassmorphic kartlar ve mobil uyumlu (responsive) arayüz.
+📸 Ekran Görüntüsü
 
----
+<div align="center">
+  <img src="./screenshots/anasayfa.png" alt="Bütçem uygulama ana ekranı" width="800"/>
+</div>
 
-## 🛠️ Kurulum ve Yerel Çalıştırma
+💡 screenshots/ klasörü altına ekran görüntülerini eklemeyi ve yukarıdaki dosya adını kendi görselinle güncellemeyi unutma.
 
-Projeyi bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 
-1.  **Bağımlılıkları Kurun:**
-    ```bash
-    npm install
-    ```
 
-2.  **Yerel Geliştirme Sunucusunu Başlatın:**
-    ```bash
-    npm run dev
-    ```
-    *Tarayıcınızda `http://localhost:5173` adresini açarak uygulamayı görebilirsiniz.*
 
-3.  **Üretim Derlemesi Alın (Build):**
-    ```bash
-    npm run build
-    ```
-    *Bu komut, Netlify veya muadili platformlara yüklemek üzere optimize edilmiş dosyaları `dist` klasöründe oluşturur.*
+📖 Proje Hakkında
 
----
+Bütçem, kullanıcıların günlük gelir ve giderlerini kaydetmesini, listelemesini, düzenlemesini ve silmesini sağlayan bir kişisel finans yönetim uygulamasıdır. Modern web geliştirme standartları çerçevesinde React (Vite) ve Tailwind CSS kullanılarak geliştirilmiştir.
 
-## 🌐 Netlify Üzerinde Canlıya Alma (Dağıtım)
+🚀 Özellikler
 
-Projeyi Netlify üzerinde yayına almak için iki kolay yoldan birini seçebilirsiniz:
+ÖzellikAçıklama➕ Ekleme (Create)Açıklama, tutar, kategori, tarih ve işlem türü (gelir/gider) girerek yeni kayıt oluşturma📋 Listeleme (Read)Tüm işlemleri kronolojik listeleme; açıklamaya göre arama, türe ve kategoriye göre filtreleme✏️ Güncelleme (Update)Seçilen işlemi form alanlarına otomatik doldurarak düzenleme🗑️ Silme (Delete)Onay alarak istenmeyen işlemleri listeden kaldırma💾 LocalStorage KalıcılığıVeriler tarayıcıda saklanır, sayfa yenilense de kaybolmaz📊 Kategori AnaliziGiderlerin kategori bazında dağılımını gösteren dinamik yüzde çubukları🎨 Premium TasarımKoyu tema, yumuşak degradeler, glassmorphic kartlar, mobil uyumlu arayüz
 
-### Yöntem A: Sürükle ve Bırak (En Kolay Yol)
-1.  Terminalinizde `npm run build` komutunu çalıştırın.
-2.  Proje klasörünüzde oluşan `dist` klasörünü bilgisayarınızda bulun.
-3.  [Netlify Drop](https://app.netlify.com/drop) sayfasını açın.
-4.  `dist` klasörünü sayfadaki alana sürükleyip bırakın. Projeniz saniyeler içinde yayına alınacaktır.
+🛠️ Teknoloji Yığını
 
-### Yöntem B: GitHub Bağlantısı (Otomatik Güncelleme)
-1.  Netlify paneline giriş yapın ve **"Add new site" -> "Import an existing project"** seçeneğini seçin.
-2.  GitHub hesabınızı bağlayıp bu projeyi yüklediğiniz depoyu (repository) seçin.
-3.  Build settings ayarlarını şu şekilde yapın (varsayılan olarak otomatik dolacaktır):
-    *   **Build command:** `npm run build`
-    *   **Publish directory:** `dist`
-4.  **"Deploy"** butonuna basın. Artık GitHub deposuna her kod gönderdiğinizde siteniz otomatik güncellenecektir.
 
----
+Framework: React 18 + Vite
+Styling: Tailwind CSS
+State/Persistence: React Hooks + LocalStorage
+Deployment: Netlify
 
-## 🖥️ GitHub'a Yükleme Adımları
 
-Projeyi kendi GitHub hesabınıza yüklemek için:
+📁 Proje Yapısı
 
-1.  GitHub üzerinde yeni bir **Public** depo (repository) oluşturun.
-2.  Terminalinizden şu komutları sırasıyla çalıştırın:
-    ```bash
-    git add .
-    git commit -m "feat: init expense tracker crud"
-    git branch -M main
-    git remote add origin <sizin-github-depo-linkiniz>
-    git push -u origin main
-    ```
+src/
+├── components/     # Tekrar kullanılabilir arayüz bileşenleri
+├── pages/          # Sayfa bileşenleri
+├── interfaces/     # Tip/veri yapıları
+├── App.jsx
+└── main.jsx
+
+⚙️ Kurulum ve Yerel Çalıştırma
+
+Gereksinimler: Node.js (v18+) ve npm
+
+bash# Depoyu klonlayın
+git clone https://github.com/kullanici-adi/butcem.git
+cd butcem
+
+# Bağımlılıkları kurun
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
+
+Tarayıcınızda http://localhost:5173 adresini açarak uygulamayı görüntüleyebilirsiniz.
+
+Üretim Derlemesi (Build)
+
+bashnpm run build
+
+Bu komut, Netlify veya muadili platformlara yüklemek üzere optimize edilmiş dosyaları dist/ klasöründe oluşturur.
+
+🌐 Canlı Yayın
+
+Uygulama Netlify üzerinden yayına alınmıştır: buraya-netlify-linkin.netlify.app
+
+🗺️ Yol Haritası
+
+
+ Grafik/analiz sayfasının genişletilmesi (aylık trend grafiği)
+ Bütçe hedefi belirleme ve limit uyarıları
+ Çoklu dil desteği
+ Verileri JSON/CSV olarak dışa aktarma
+
+
+🤝 Katkıda Bulunma
+
+Katkılarınızı bekliyoruz!
+
+
+Bu depoyu fork'layın
+Yeni bir dal oluşturun (git checkout -b ozellik/harika-ozellik)
+Değişikliklerinizi commit'leyin (git commit -m 'Harika özellik eklendi')
+Dalınızı push'layın (git push origin ozellik/harika-ozellik)
+Bir Pull Request açın
+
+
+📄 Lisans
+
+Bu proje MIT Lisansı ile lisanslanmıştır.
+
+👤 İletişim
+
+[Adın Soyadın]
+
+
+GitHub: @kullanici-adi
+LinkedIn: profil linkin
